@@ -8,13 +8,13 @@ except ImportError as e:
     os.system("sudo pip3 install numpy")
     import numpy as np
 
-def ridge(data):
+def ridge(data):#岭回归,最小二乘法
     pass
     
-def lasso(data):
+def lasso(data):#lasso回归,梯度下降法
     pass
 
-def read_data(path='./data/exp02/'):
+def read_data(path='../data/exp02/'):
     x = np.load(path + 'X_train.npy')
     y = np.load(path + 'y_train.npy')
     return x, y
